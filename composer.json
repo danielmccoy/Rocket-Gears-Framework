@@ -1,0 +1,10 @@
+{
+    "name": "RocketGears Framework",
+    "description": "A basic PHP framework designed to not get in your way.",
+    "require": {
+        "phpunit/phpunit": "3.7.21"
+    },
+    "autoload": {
+        "psr-0": {"RocketGears\\": "src/"}
+    }
+}
