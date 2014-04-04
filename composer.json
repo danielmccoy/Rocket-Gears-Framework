@@ -1,8 +1,17 @@
 {
-    "name": "RocketGears Framework",
-    "description": "A basic PHP framework designed to not get in your way.",
+    "name": "rocketgears/framework",
+    "description": "An extremely minimal PHP framework.",
+    "keywords": ["framework"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daniel McCoy",
+            "email": "daniel@rocketgears.com"
+        }
+    ],
     "require": {
-        "phpunit/phpunit": "3.7.21"
+        "php": ">=5.4.0",
+        "phpunit/phpunit": "4.0.*"
     },
     "autoload": {
         "psr-0": {"RocketGears\\": "src/"}
