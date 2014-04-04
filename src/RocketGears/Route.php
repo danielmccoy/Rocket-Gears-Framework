@@ -118,7 +118,7 @@
 					$pattern = str_replace($match, "([^/]+)", $pattern);
 				}
 			}
-	
+
 			// Check for matches
 			$this->_pattern = new RoutePattern;
 			if(preg_match($pattern, $request->getPath(), $matches))
@@ -142,7 +142,7 @@
 		 */
 		public function getPath()
 		{
-			return ($this->_path === NULL) ? '' : rtrim($this->_path, '/');
+			return ($this->_path === NULL) ? '' : '/' . trim($this->_path, '/');
 		}
 	
 	

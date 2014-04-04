@@ -41,7 +41,7 @@
 		 */
 		public function getPath()
 		{
-			return ($this->_path == '/') ? '/' : rtrim($this->_path, '/');
+			return '/' . trim($this->_path, '/');
 		}
 
 
