@@ -1,6 +1,6 @@
-# RocketGears Framework
+# Rocket Gears Framework
 
-An extremely minimal PHP framework.
+An extremely minimal PHP web framework.
 
 Heavily inspired by the awesome http://www.slimframework.com/ and http://laravel.com/ frameworks.
 
@@ -28,4 +28,19 @@ Run phpunit to check everything is working.
 
 ```bash
 $ php vendor/bin/phpunit
+```
+
+## Basic Usage
+
+```php
+<?php
+	include_once('vendor/autoload.php');
+
+	$app = new RocketGears\Application();
+
+	$app->get('/{name}', function($name){
+		echo "Hello {$name}";
+	});
+	$app->run();
+
 ```
