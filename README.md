@@ -45,7 +45,7 @@ $ php vendor/bin/phpunit
 	$app->get('/{name}', function($name){
 		// Route response
 		echo "Hello {$name}";
-	});
+	})->where('name', '[a-z]+');
 
 	// Run app
 	$app->run();
