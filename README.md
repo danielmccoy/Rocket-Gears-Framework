@@ -42,6 +42,7 @@ $ php vendor/bin/phpunit
 	$app = new RocketGears\Application();
 
 	// Set up route (ie: /daniel)
+	// Only allow lowercase characters in name parameter
 	$app->get('/{name}', function($name){
 		// Route response
 		echo "Hello {$name}";
