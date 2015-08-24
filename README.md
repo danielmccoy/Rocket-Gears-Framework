@@ -34,13 +34,20 @@ $ php vendor/bin/phpunit
 
 ```php
 <?php
+	
+	// Class autoloader
 	include_once('vendor/autoload.php');
 
+	// Initialize framework
 	$app = new RocketGears\Application();
 
+	// Set up route (ie: /daniel)
 	$app->get('/{name}', function($name){
+		// Route response
 		echo "Hello {$name}";
 	});
+
+	// Run app
 	$app->run();
 
 ```
